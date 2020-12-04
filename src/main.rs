@@ -1,3 +1,69 @@
+use std::fs;
+use serde_json::{Value, from_str};
+use regex::{Regex};
+use std::collections::HashSet;
+
+// #[macro_use(lazy_static)]
+// extern crate lazy_static;
+
+
+static GRAMMAR_FILENAME:&str = "grammar.json";
+
 fn main() {
-    println!("Hello, world!");
+    let grammar = get_grammar();
+    let _populated_text = populate(grammar);
+}
+
+fn populate(grammar: String) -> String {
+    let json = get_json(grammar.as_str());
+    let root = &json["root"];
+    let populated = recursively_fill_in_fields(root);
+    return populated;
+}
+
+fn recursively_fill_in_fields(root: &Value) -> String {
+    let mut matches;
+
+    let top_level_json = &root["value"];
+    let mut new_text = top_level_json.to_string();
+
+    let old_text = new_text.clone();
+    matches = find_tags(&old_text);
+
+    for mat in matches {
+        new_text = get_text_replacing_tag(new_text, &mat);
+    }
+    return new_text;
+}
+
+fn find_tags(text: &str) -> HashSet<&str> {
+    let re = Regex::new(r"\{(.*?)}").unwrap();  // TODO: Extract to static constant
+    return re.find_iter(&text).map(|mat| mat.as_str()).collect();
+}
+
+fn get_text_replacing_tag(old_text: String, tag: &str) -> String {
+    let mad_lib = get_mad_lib_text_for_tag(tag);
+    return old_text.replace(tag, &mad_lib);
+}
+
+fn get_mad_lib_text_for_tag(tag_name: &str) -> &str {
+    return lookup_mad_lib_text_for_tag(tag_name);
+}
+
+fn lookup_mad_lib_text_for_tag(tag_name: &str) -> &str {
+    match tag_name {
+        "artist" => {"Pearl Jam"}
+        _ => {"replacement TODO"}
+    }
+}
+
+
+fn get_grammar() -> String {
+    let path = format!("./src/assets/{}", GRAMMAR_FILENAME);
+    return fs::read_to_string(path).expect("Could not read file.");
+}
+
+fn get_json(grammar: &str) -> Value {
+    let json:Value = from_str(&grammar).expect("Could not parse JSON.");
+    json
 }

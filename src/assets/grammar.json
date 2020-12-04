@@ -1,11 +1,11 @@
 {
 	"root": {
-		"items": [
-			"{{band}}<br/>{{album}}<p>{{body}}{{ending}}"
+		"value": [
+			"{band}<br/>{album}<p>{body}{ending}"
 		]
 	},
 	"body": {
-		"items": "{{sentence}} {{sentence}} {{sentence}} {{sentence}} {{sentence}}<p>{{sentence}} {{sentence}} {{sentence}} {{sentence}}"
+		"value": "{sentence} {sentence} {sentence} {sentence} {sentence}<p>{sentence} {sentence} {sentence} {sentence}"
 	},
 	"band": {
 		"meta": {
@@ -18,7 +18,7 @@
 			"type": "CHOOSE_JUST_ONCE",
 			"style": ["italic"]
 		},
-		"items": [
+		"value": [
 			"Everything That Ends Must Begin",
 			"Keep Up Pressure In All Directions",
 			"Let Your Soul Fall Out",
@@ -32,30 +32,30 @@
 			"Swallow This Live",
 			"Back to Reality",
 			"My Own Prison",
-			"{{band}}songs",
+			"{band}songs",
 			"Tragic Sundays",
 			"Hot in the Shade",
 			"So Far, So Good",
 			"At Carnegie Hall",
 			"All For Love",
-			"{{band}}",
-			"{{band}}",
+			"{band}",
+			"{band}",
 			"Caught in the Act",
 			"Oh No",
-			"You Sons of Bitches, It's {{band}}",
-			"It Takes a Nation of Millions to Hold {{band}} Back",
-			"Mrs. Frisbee and the Rats of {{band}}",
+			"You Sons of Bitches, It's {band}",
+			"It Takes a Nation of Millions to Hold {band} Back",
+			"Mrs. Frisbee and the Rats of {band}",
 			"Back on These Streets",
-			"{{band}} II",
-			"{{number}}",
-			"{{band}}",
+			"{band} II",
+			"{number}",
+			"{band}",
 			"Somebody Stop Me",
 			"No More Mr. Nice Guy",
 			"More Songs Inspired By Frozen",
-			"Never Mind, It's {{band}}",
+			"Never Mind, It's {band}",
 			"For the Love of Rock",
 			"We're Back",
-			"...and then there was {{band}}",
+			"...and then there was {band}",
 			"Glee: The Music, Volume I",
 			"Mail Order Monster",
 			"Radio K.A.O.S.",
@@ -63,7 +63,7 @@
 			"Self-titled",
 			"Now That You Mention It",
 			"1863",
-			"{{year}}",
+			"{year}",
 			"No Known Cure",
 			"Diary of a Mad Band",
 			"In Spite Of Ourselves",
@@ -71,23 +71,23 @@
 			"Building the Perfect Beast",
 			"Greatest Misses",
 			"four",
-			"{{band}}",
+			"{band}",
 			"Disposition Matrix",
 			"songs",
 			"Odyssey of the Mind",
-			"{{band}} for Sale",
+			"{band} for Sale",
 			"Parabola Paratroopers",
-			"Another Side of {{band}}",
+			"Another Side of {band}",
 			"Let's Be Frank",
 			"Innuendo",
-			"Meet {{band}}",
+			"Meet {band}",
 			"52 Card Pickup",
 			"Americans",
-			"Ladies and Gentlemen, It's {{band}}",
-			"{{band}} Live at Red Rocks",
+			"Ladies and Gentlemen, It's {band}",
+			"{band} Live at Red Rocks",
 			"West",
 			"...but seriously",
-			"{{band}} Unplugged",
+			"{band} Unplugged",
 			"Space Jam: Music Inspired by the Movie",
 			"dreams",
 			"Stain"
@@ -95,7 +95,7 @@
 	},
 
 	"year": {
-		"items": [
+		"value": [
 			"1992",
 			"1999",
 			"2005",
@@ -109,123 +109,123 @@
 			"yardstick": "quality",
 			"special": ["capitalize"]
 		},
-		"items": [
-			"This {{noun}} sucks.",
+		"value": [
+			"This {noun} sucks.",
 			"What were they thinking?",
-			"{{album}} is hard on the ear, and my dog hated it, too.",
-			"News flash: this album is strictly {{adjective}}.",
-			"Unfortunately, too much of {{album}} -- like the ballad {{song}}, about {{issue}} -- is just {{adjective}}.",
-			"You would have to be a total idiot to buy this {{adjective}} album.",
-			"{{album}} is a real letdown.",
-			"{{description}} {{noun}} doesn't get any more {{adjective}}.",
+			"{album} is hard on the ear, and my dog hated it, too.",
+			"News flash: this album is strictly {adjective}.",
+			"Unfortunately, too much of {album} -- like the ballad {song}, about {issue} -- is just {adjective}.",
+			"You would have to be a total idiot to buy this {adjective} album.",
+			"{album} is a real letdown.",
+			"{description} {noun} doesn't get any more {adjective}.",
 			"They did it. They finally did it.",
-			"{{band}} hits a new low with {{album}}, their ambitious concept album about {{issue}} and {{issue}}.",
-			"There's plenty of lyrical mumbo-jumbo about {{issue}} and {{issue}}, but the {{noun}} is lackluster.",
-			"Do we really need more songs about {{issue}}?",
-			"{{album}} starts with the {{description}} {{noun}} of {{song}}, and only gets worse.",
-			"As {{description}} as it is on its own merit, a song like {{song}} is even more of a misstep coming from {{band}}, who have built a fascinating career as {{description}} philosophers, masters of {{description}} {{noun}} badgering the universe for answers.",
-			"This predictable, {{adjective}} {{quality}} left me with a feeling of emptiness.",
-			"{{album}} will keep the used CD section of your record store stocked for years.",
-			"This band has never made an out-and-out {{description}} album, but now it has made a {{description}} one.",
-			"It's hard to believe these guys could get any more {{adjective}}, but they've done it.",
-			"There was a time when {{band}} was thought to be the future of rock.",
+			"{band} hits a new low with {album}, their ambitious concept album about {issue} and {issue}.",
+			"There's plenty of lyrical mumbo-jumbo about {issue} and {issue}, but the {noun} is lackluster.",
+			"Do we really need more songs about {issue}?",
+			"{album} starts with the {description} {noun} of {song}, and only gets worse.",
+			"As {description} as it is on its own merit, a song like {song} is even more of a misstep coming from {band}, who have built a fascinating career as {description} philosophers, masters of {description} {noun} badgering the universe for answers.",
+			"This predictable, {adjective} {quality} left me with a feeling of emptiness.",
+			"{album} will keep the used CD section of your record store stocked for years.",
+			"This band has never made an out-and-out {description} album, but now it has made a {description} one.",
+			"It's hard to believe these guys could get any more {adjective}, but they've done it.",
+			"There was a time when {band} was thought to be the future of rock.",
 			"Does anyone over the age of 15 like this stuff?",
-			"{{band}} is not so much of a band, but an exercise in marketing.",
-			"On the {{adjective}} live bonus track {{song}}, {{band}} sounds like they're having a great time, unlike the audience.",
-			"In 1999, this band was sitting on top of the world. Now they're merely {{adjective}}.",
+			"{band} is not so much of a band, but an exercise in marketing.",
+			"On the {adjective} live bonus track {song}, {band} sounds like they're having a great time, unlike the audience.",
+			"In 1999, this band was sitting on top of the world. Now they're merely {adjective}.",
 			"Do these guys really need more money?",
-			"When the singer sings about {{issue}}, the result is purely {{adjective}}.",
-			"Even the {{description}} production by {{producer}}, and a steady supply of {{noun}} can't save {{album}}, envisioned as a song cycle about {{issue}} and {{issue}}.",
-			"Fans may say otherwise, but the {{description}} {{song}} is virtually a rewrite of {{song}}.",
-			"Most of the time, {{band}} can't shake its reputation for being {{adjective}}.",
+			"When the singer sings about {issue}, the result is purely {adjective}.",
+			"Even the {description} production by {producer}, and a steady supply of {noun} can't save {album}, envisioned as a song cycle about {issue} and {issue}.",
+			"Fans may say otherwise, but the {description} {song} is virtually a rewrite of {song}.",
+			"Most of the time, {band} can't shake its reputation for being {adjective}.",
 			"Call it a tragical history tour.",
-			"Never before has a band taken as many chances in the studio as {{band}}.",
+			"Never before has a band taken as many chances in the studio as {band}.",
 			"<P>Sometimes it works.",
-			"Whether singing about {{issue}} ({{song}}) or {{issue}} ({{song}}), the band takes being {{adjective}} to the extreme.",
+			"Whether singing about {issue} ({song}) or {issue} ({song}), the band takes being {adjective} to the extreme.",
 			"These guys are apparently very sensitive.",
-			"{{song}} illustrates the culpability of those who fight to destroy humanity.",
+			"{song} illustrates the culpability of those who fight to destroy humanity.",
 			"No surprises here.",
-			"When I was in high school, everyone I knew listened to {{band}}.",
-			"{{band}} offers more of the usual {{adjective}}, {{description}} {{noun}} on this one.",
-			"{{band}} has been coasting on their reputation for {{adjective}} {{noun}} for too long.",
-			"Stylistically, the band's sound can be {{description}}, achieving {{adjective}} {{noun}}.",
-			"The latest from {{band}} starts with the {{adjective}} {{noun}} of {{song}}, and the last song, {{song}}, is {{description}}.",
-			"On the {{description}} {{song}}, {{band}} is exploring new territory.",
-			"Piece together the story of {{band}} and you have something unique in the world of contemporary music.",
+			"When I was in high school, everyone I knew listened to {band}.",
+			"{band} offers more of the usual {adjective}, {description} {noun} on this one.",
+			"{band} has been coasting on their reputation for {adjective} {noun} for too long.",
+			"Stylistically, the band's sound can be {description}, achieving {adjective} {noun}.",
+			"The latest from {band} starts with the {adjective} {noun} of {song}, and the last song, {song}, is {description}.",
+			"On the {description} {song}, {band} is exploring new territory.",
+			"Piece together the story of {band} and you have something unique in the world of contemporary music.",
 			"This defies the logic of the music industry.",
-			"In {{year}}, without much fanfare, {{band}} released their debut single {{song}} on an incredibly obscure indie level. Its {{description}}, {{adjective}} {{noun}} was a revelation, at least for me, since I was one of four people who heard it. But times have changed.",
-			"The {{noun}} on the new single {{song}} will blast {{band}} into the mainstream.",
-			"The subject matter runs the gamut from {{issue}} ({{song}}) to {{issue}} ({{song}}).",
-			"{{album}} continues the formula perfected on {{band}}'s debut: a steady supply of {{adjective}} {{noun}}.",
-			"The first thing you notice, on {{song}}, is how {{description}} {{band}}'s trademark {{noun}} has gotten.",
-			"If you enjoy {{description}} {{noun}}, you'll like the latest release from {{band}}.",
-			"They spend most of their time talking about their favorite subject: {{issue}}.",
-			"When they take on topics like {{issue}} ({{song}}), they're predictably {{adjective}}.",
-			"{{album}} gets things off to a {{adjective}} start with the {{description}} {{song}}.",
-			"{{song}} is a {{adjective}} exercise in {{description}} {{noun}}.",
+			"In {year}, without much fanfare, {band} released their debut single {song} on an incredibly obscure indie level. Its {description}, {adjective} {noun} was a revelation, at least for me, since I was one of four people who heard it. But times have changed.",
+			"The {noun} on the new single {song} will blast {band} into the mainstream.",
+			"The subject matter runs the gamut from {issue} ({song}) to {issue} ({song}).",
+			"{album} continues the formula perfected on {band}'s debut: a steady supply of {adjective} {noun}.",
+			"The first thing you notice, on {song}, is how {description} {band}'s trademark {noun} has gotten.",
+			"If you enjoy {description} {noun}, you'll like the latest release from {band}.",
+			"They spend most of their time talking about their favorite subject: {issue}.",
+			"When they take on topics like {issue} ({song}), they're predictably {adjective}.",
+			"{album} gets things off to a {adjective} start with the {description} {song}.",
+			"{song} is a {adjective} exercise in {description} {noun}.",
 			"On this album, the surviving members reunite -- and in top form.",
-			"{{band}} is more {{adjective}} than ever.",
-			"Just listen to the {{description}} {{noun}} of {{song}}.",
+			"{band} is more {adjective} than ever.",
+			"Just listen to the {description} {noun} of {song}.",
 			"They did it. They finally did it.",
-			"For all their {{description}} {{noun}}, {{band}} has never been easy to understand.",
-			"{{song}} is a {{description}}, {{instrument}}-driven ballad about {{issue}} and {{issue}}, with strings hauntingly arranged by {{producer}}.",
-			"At its most {{adjective}}, {{album}} recalls {{classicalbum}}.",
-			"{{band}} understand that recycling musical styles is a pop tradition that's older than the blues.",
-			"The latest from {{band}} starts with the {{description}} {{noun}} of {{song}}, and doesn't let up.",
-			"Thankfully, they have stuck to what they know best: {{description}} {{noun}}.",
-			"{{band}} can be hard to swallow, yet the group's willingness to break boundaries makes them worthwhile.",
-			"Whatever you might think of {{band}}, you've got to admit: they're good when it comes to {{description}} {{noun}}.",
-			"After listening to {{song}}, you realize the {{instrument}}s aren't miked right.",
-			"It's only fitting that {{band}}'s new album is called {{album}}.",
+			"For all their {description} {noun}, {band} has never been easy to understand.",
+			"{song} is a {description}, {instrument}-driven ballad about {issue} and {issue}, with strings hauntingly arranged by {producer}.",
+			"At its most {adjective}, {album} recalls {classicalbum}.",
+			"{band} understand that recycling musical styles is a pop tradition that's older than the blues.",
+			"The latest from {band} starts with the {description} {noun} of {song}, and doesn't let up.",
+			"Thankfully, they have stuck to what they know best: {description} {noun}.",
+			"{band} can be hard to swallow, yet the group's willingness to break boundaries makes them worthwhile.",
+			"Whatever you might think of {band}, you've got to admit: they're good when it comes to {description} {noun}.",
+			"After listening to {song}, you realize the {instrument}s aren't miked right.",
+			"It's only fitting that {band}'s new album is called {album}.",
 			"It's sad that the artists who most successfully express our fears and anxieties are least able to cope with the burdens of fame.",
-			"After a five year hiatus, {{band}} is back.",
+			"After a five year hiatus, {band} is back.",
 			"Accept no imitations.",
-			"Fans of {{description}} {{noun}} will find much to like on {{album}}, especially on {{song}}, a song about {{issue}}.",
-			"{{rockcliche}}, and no one knows this better than {{band}}.",
+			"Fans of {description} {noun} will find much to like on {album}, especially on {song}, a song about {issue}.",
+			"{rockcliche}, and no one knows this better than {band}.",
 			"<P>They haven't sold out.",
-			"They take on {{issue}} ({{song}}) and {{issue}} ({{song}}).",
-			"{{band}} has always walked the line between originality and stereotype.",
-			"{{song}} won't win any Grammies this year.",
-			"How many bands have reinvented themselves as successfully as {{band}}?",
-			"Once pegged as one-hit wonders, {{band}} is here to stay.",
-			"A {{description}} smorgasboard of sounds is offered up here, from the {{adjective}} {{song}} to the {{description}} {{noun}} of {{song}}.",
-			"There's no shortage of {{description}} {{noun}} here, especially on {{song}}.",
-			"{{band}} is unsafe at any speed.",
-			"What a long, strange trip it's been for {{band}}.",
-			"The masters of {{description}} {{noun}} are back.",
-			"On its major-label debut, {{band}} demonstrates an affinity for {{description}} {{noun}}.",
+			"They take on {issue} ({song}) and {issue} ({song}).",
+			"{band} has always walked the line between originality and stereotype.",
+			"{song} won't win any Grammies this year.",
+			"How many bands have reinvented themselves as successfully as {band}?",
+			"Once pegged as one-hit wonders, {band} is here to stay.",
+			"A {description} smorgasboard of sounds is offered up here, from the {adjective} {song} to the {description} {noun} of {song}.",
+			"There's no shortage of {description} {noun} here, especially on {song}.",
+			"{band} is unsafe at any speed.",
+			"What a long, strange trip it's been for {band}.",
+			"The masters of {description} {noun} are back.",
+			"On its major-label debut, {band} demonstrates an affinity for {description} {noun}.",
 			"Some things never change.",
 			"The lyrics are darker and more introspective than on earlier releases.",
-			"The same obsessions -- {{issue}} and {{issue}} -- are here in spades.",
-			"The title of {{song}} could allude to the way {{band}} continue to unapologetically evoke the {{description}} {{noun}} of {{classicband}}.",
-			"{{band}} gained a reputation early on for being {{adjective}}.",
-			"{{album}} lives up to its title.",
-			"An amibitious concept album about {{issue}} and {{issue}}, the main dish of this {{adjective}} meal  is the {{description}} {{song}}.",
-			"Don't call it a comeback -- {{band}} has been here for years -- but never with such {{description}} {{noun}}.",
-			"A penchant for {{description}} {{noun}} makes {{album}} truly {{adjective}}.",
-			"Underneath their antics lies a {{adjective}} artistic maturity that reveals how they have grown since they were young punks.",
-			"{{band}}'s {{noun}} is truly {{adjective}}, all thanks to the {{description}} production by {{producer}}.",
-			"Their {{description}} {{noun}} has made them the heroes of a whole new generation.",
-			"Until now, {{band}} was principally known as a {{adjective}} live act.",
+			"The same obsessions -- {issue} and {issue} -- are here in spades.",
+			"The title of {song} could allude to the way {band} continue to unapologetically evoke the {description} {noun} of {classicband}.",
+			"{band} gained a reputation early on for being {adjective}.",
+			"{album} lives up to its title.",
+			"An amibitious concept album about {issue} and {issue}, the main dish of this {adjective} meal  is the {description} {song}.",
+			"Don't call it a comeback -- {band} has been here for years -- but never with such {description} {noun}.",
+			"A penchant for {description} {noun} makes {album} truly {adjective}.",
+			"Underneath their antics lies a {adjective} artistic maturity that reveals how they have grown since they were young punks.",
+			"{band}'s {noun} is truly {adjective}, all thanks to the {description} production by {producer}.",
+			"Their {description} {noun} has made them the heroes of a whole new generation.",
+			"Until now, {band} was principally known as a {adjective} live act.",
 			"This one's getting a lot of rotation at the office.",
-			"{{band}} superimposes lyrics about {{issue}} and {{issue}} over {{description}} bass lines.",
-			"If your tastes run to {{description}} {{noun}}, this is the real thing.",
-			"The strength of this album is its {{instrument}}-centric {{description}} {{noun}}.",
-			"The most audacious cut is the 15-minute {{adjective}} epic, {{song}}.",
-			"This music is {{description}} and {{adjective}}.",
-			"It's their most {{description}} outing in quite a while.",
+			"{band} superimposes lyrics about {issue} and {issue} over {description} bass lines.",
+			"If your tastes run to {description} {noun}, this is the real thing.",
+			"The strength of this album is its {instrument}-centric {description} {noun}.",
+			"The most audacious cut is the 15-minute {adjective} epic, {song}.",
+			"This music is {description} and {adjective}.",
+			"It's their most {description} outing in quite a while.",
 			"Somebody stop me!",
-			"They are a band as much {{description}} as they are {{adjective}}.",
-			"{{song}} shows off their {{description}}, {{adjective}} {{noun}}.",
-			"What's unbelievable is how {{adjective}} the band's trademark {{description}} {{noun}} has gotten.",
-			"At {{band}}'s most inspired, you think your iPhone is going to spontaneously combust.",
-			"Their lyrics about {{issue}} ({{song}}) and {{issue}} ({{song}}) reach a new level of {{description}} and {{adjective}} {{noun}}.",
+			"They are a band as much {description} as they are {adjective}.",
+			"{song} shows off their {description}, {adjective} {noun}.",
+			"What's unbelievable is how {adjective} the band's trademark {description} {noun} has gotten.",
+			"At {band}'s most inspired, you think your iPhone is going to spontaneously combust.",
+			"Their lyrics about {issue} ({song}) and {issue} ({song}) reach a new level of {description} and {adjective} {noun}.",
 			"It's the best thing I've heard since 1987.",
-			"{{album}} remains a {{adjective}} album, packed with amazing sounds.",
-			"Make no mistake: this music is {{adjective}}.",
-			"Every chord change on {{album}} will break your heart.",
+			"{album} remains a {adjective} album, packed with amazing sounds.",
+			"Make no mistake: this music is {adjective}.",
+			"Every chord change on {album} will break your heart.",
 			"What more is there to say? Buy this album, buy this album, buy this album.",
-			"What can you say about {{band}} that hasn't already been said?"
+			"What can you say about {band} that hasn't already been said?"
 		]
 	},
 
@@ -234,7 +234,7 @@
 			"type": "WEIGHTED",
 			"yardstick": "quality"
 		},
-		"items": [
+		"value": [
 			"clunker",
 			"hackwork",
 			"standout"
@@ -246,7 +246,7 @@
 			"type": "WEIGHTED",
 			"yardstick": "loudness"
 		},
-		"items": [
+		"value": [
 			"apocalypse",
 			"agony",
 			"pandemonium",
@@ -278,11 +278,11 @@
 			"throb",
 			"songwriting",
 			"teen anthems",
-			"{{instrument}} work",
+			"{instrument} work",
 			"vocal interplay",
 			"funk",
 			"blue-eyed soul",
-			"{{liteband}}-inspired harmony",
+			"{liteband}-inspired harmony",
 			"pop artistry",
 			"songcraft",
 			"melody",
@@ -299,20 +299,20 @@
 			"type": "WEIGHTED",
 			"yardstick": "loudness"
 		},
-		"items": [
+		"value": [
 			"deathly",
 			"skull-crushing",
 			"bone-crunching",
 			"horrifying",
 			"thudding",
 			"twisted and insane",
-			"{{darkband}}-inspired",
+			"{darkband}-inspired",
 			"headbanging",
 			"ferocious",
-			"downright {{darkband}}-ish",
+			"downright {darkband}-ish",
 			"metallic",
 			"gloomy",
-			"{{description}}core",
+			"{description}core",
 			"brooding",
 			"muddily-produced",
 			"raw",
@@ -344,10 +344,10 @@
 			"singalong",
 			"Beatle-esque",
 			"rock-rap",
-			"faux-{{classicband}}",
+			"faux-{classicband}",
 			"tuneful",
 			"understated",
-			"{{producer}}-produced",
+			"{producer}-produced",
 			"prog-rock",
 			"power-pop",
 			"falsetto",
@@ -355,29 +355,29 @@
 			"candlelit",
 			"ad-friendly",
 			"playful",
-			"{{classicband}}-lite",
+			"{classicband}-lite",
 			"narcotic",
 			"acoustic",
-			"rap/{{quality}}",
+			"rap/{quality}",
 			"from-the-heart",
 			"sensitive",
 			"poppy",
-			"funk/{{description}}",
+			"funk/{description}",
 			"folky",
-			"{{instrument}}-based",
+			"{instrument}-based",
 			"delightful",
-			"faux-{{producer}}",
+			"faux-{producer}",
 			"Muzak",
 			"frisky",
 			"easy-listening",
 			"syrupy-sweet",
 			"distinctly hummable",
-			"{{liteband}}-esque",
+			"{liteband}-esque"
 		]
 	},
 
 	"classicband": {
-		"items": [
+		"value": [
 			"R.E.M.",
 			"David Bowie",
 			"Ziggy",
@@ -386,12 +386,12 @@
 			"Floyd",
 			"Zeppelin",
 			"Mahavishnu Orchestra",
-			"Clash",
+			"Clash"
 		]
 	},
 
 	"darkband": {
-		"items": [
+		"value": [
 			"Cannibal Corpse",
 			"Napalm Death",
 			"Minor Threat",
@@ -403,7 +403,7 @@
 	},
 
 	"liteband": {
-		"items": [
+		"value": [
 			"Beach Boys",
 			"Katy Perry",
 			"Backstreet",
@@ -414,7 +414,7 @@
 	},
 
 	"classicalbum": {
-		"items": [
+		"value": [
 			"Pet Sounds",
 			"Bowie's <em>Aladdin Sane</em>",
 			"<em>The Velvet Underground and Nico</em>",
@@ -430,7 +430,7 @@
 	},
 
 	"hipband": {
-		"items": [
+		"value": [
 			"the Velvet Underground",
 			"Iggy",
 			"Black Flag",
@@ -440,15 +440,15 @@
 	},
 
 	"issue": {
-		"items": [
+		"value": [
 			"divorce",
 			"suburban boredom",
 			"prayer in school",
-			"their own producer, {{producer}}",
+			"their own producer, {producer}",
 			"the cage of human existence",
 			"media manipulation",
 			"their own troubled past",
-			"{{legend}}",
+			"{legend}",
 			"death row",
 			"the environment",
 			"emptiness",
@@ -457,8 +457,8 @@
 			"climate change",
 			"World War II",
 			"Benghazi",
-			"producer {{producer}}",
-			"{{legend}}",
+			"producer {producer}",
+			"{legend}",
 			"the group confronting its demons",
 			"girls who are really messed up",
 			"the summer of 1984",
@@ -466,13 +466,13 @@
 			"being a loner",
 			"teenage confusion",
 			"confused women",
-			"their favorite band, {{classicband}}",
+			"their favorite band, {classicband}",
 			"conformity",
-			"{{legend}}",
+			"{legend}",
 			"being a rebel",
 			"Hollywood decadence",
 			"homelessness",
-			"{{legend}}",
+			"{legend}",
 			"self-loathing",
 			"sexy women",
 			"the universal brotherhood of man",
@@ -491,14 +491,14 @@
 			"being on the road",
 			"the Greek banking crisis",
 			"tirades against organized religion",
-			"growing up listening to {{classicband}}",
-			"first discovering {{hipband}}",
+			"growing up listening to {classicband}",
+			"first discovering {hipband}",
 			"slamming old band members as incompetent flakes",
 			"the bar where they used to shoot pool",
 			"high-profile lawsuits against ex-girlfriends",
 			"strange women uttering strange truths",
 			"sci-fi visions of tomorrow",
-			"the movie {{movie}}",
+			"the movie {movie}",
 			"going on camping trips",
 			"homeless prophets",
 			"being on the road"
@@ -506,7 +506,7 @@
 	},
 
 	"movie": {
-		"items": [
+		"value": [
 			"Fight Club",
 			"Kiss Meets The Phantom of the Park",
 			"Apocalypse Now",
@@ -515,13 +515,13 @@
 	},
 
 	"legend": {
-		"items": [
+		"value": [
 			"James Dean",
 			"Elvis",
 			"JFK",
 			"Marilyn Monroe",
 			"Kurt Cobain",
-			"River Phoenix",
+			"River Phoenix"
 		]
 	},
 
@@ -530,7 +530,7 @@
 			"type": "WEIGHTED",
 			"yardstick": "quality"
 		},
-		"items": [
+		"value": [
 			"bottom-of-the-barrel",
 			"totally and completely worthless",
 			"godawful",
@@ -605,7 +605,7 @@
 	},
 
 	"producer": {
-		"items": [
+		"value": [
 			"Brian Eno",
 			"Danger Mouse",
 			"Daft Punk",
@@ -617,7 +617,7 @@
 	},
 
 	"instrument": {
-		"items": [
+		"value": [
 			"ukelele",
 			"sitar",
 			"Moog",
@@ -630,7 +630,7 @@
 	},
 
 	"rockcliche": {
-		"items": [
+		"value": [
 			"It's better to burn out than it is to fade away",
 			"We'll all float on",
 			"Everybody knows this is nowhere",
@@ -653,7 +653,7 @@
 			"type": "WEIGHTED",
 			"yardstick": "quality"
 		},
-		"items": [
+		"value": [
 			"You might as well spend 49 minutes listening to your dishwasher.",
 			"About the only thing good about this CD is that it is shiny.",
 			"If this is the future of rock, I don't want any part of it.",
@@ -662,19 +662,19 @@
 			"Maybe if the cover art were more appealing I'd give it another star.",
 			"Why do I even bother reviewing albums like this?",
 			"Strictly for masochists.",
-			"{{rockcliche}}.",
-			"{{rockcliche}}?",
-			"{{rockcliche}}.",
+			"{rockcliche}.",
+			"{rockcliche}?",
+			"{rockcliche}.",
 			"This album is the musical equivalent of a souvenir T-shirt: perfectly comfortable, but destined to fade.",
 			"It's the end of the world as they know it, and they feel fine.",
 			"Then again, we wouldn't have it any other way.",
-			"{{rockcliche}}.",
+			"{rockcliche}.",
 			"And if that doesn't make this album worth waiting for, I don't know what would.",
-			"{{rockcliche}}.",
-			"They know better than anyone else: {{rockcliche}}.",
-			"{{rockcliche}}.",
-			"{{rockcliche}}.",
-			"{{number}} years and this is it?",
+			"{rockcliche}.",
+			"They know better than anyone else: {rockcliche}.",
+			"{rockcliche}.",
+			"{rockcliche}.",
+			"{number} years and this is it?",
 			"In times like these, this is just the kind of album America needs.",
 			"I don't know about you, but I just can't get enough of Brian Eno.",
 			"You could do a lot worse.",
@@ -687,13 +687,13 @@
 			"Not to subscribe to Apple Music for this would make you an total ingrate.",
 			"Hands down, the album of the year.",
 			"It may well be the most important purchase you make, ever.",
-			"{{rockcliche}} indeed?",
-			"{{rockcliche}}."
+			"{rockcliche} indeed?",
+			"{rockcliche}."
 		]
 	},
 
 	"number": {
-		"items": [
+		"value": [
 			"eight",
 			"two",
 			"nine",
@@ -705,7 +705,7 @@
 		"meta": {
 			"style": [ "italic" ]
 		},
-		"items": [
+		"value": [
 			"The Fullest Extent of the Jam",
 			"Not the Way It Seems",
 			"Be Cool, But Care",
@@ -783,7 +783,7 @@
 	},
 
 	"test": {
-		"items": [
+		"value": [
 			"Test",
 			"Test",
 			"Test",
