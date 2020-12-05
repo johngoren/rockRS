@@ -11,7 +11,8 @@ static GRAMMAR_FILENAME:&str = "grammar.json";
 
 fn main() {
     let grammar = get_grammar();
-    let _populated_text = populate(grammar);
+    let populated_text = populate(grammar);
+    println!("{}", populated_text);
 }
 
 fn populate(grammar: String) -> String {
@@ -22,18 +23,25 @@ fn populate(grammar: String) -> String {
 }
 
 fn recursively_fill_in_fields(root: &Value) -> String {
-    let mut matches;
+    let json_top_level = &root["value"];
+    let raw_text = json_top_level.to_string();
 
-    let top_level_json = &root["value"];
-    let mut new_text = top_level_json.to_string();
+    let mut new_text = String::from(&raw_text);
 
-    let old_text = new_text.clone();
-    matches = find_tags(&old_text);
-
-    for mat in matches {
-        new_text = get_text_replacing_tag(new_text, &mat);
+    loop {
+        let mut matches = find_tags(&raw_text);
+        for mat in matches {
+            new_text = get_text_replacing_tag(new_text, &mat);
+        }
+        let next_text = String::from(&new_text);
+        matches = find_tags(&next_text);
+        let num_matches = matches.iter().count();
+        if num_matches == 0 {
+            break;
+        }
     }
-    return new_text;
+
+    new_text
 }
 
 fn find_tags(text: &str) -> HashSet<&str> {
@@ -50,10 +58,12 @@ fn get_mad_lib_text_for_tag(tag_name: &str) -> &str {
     return lookup_mad_lib_text_for_tag(tag_name);
 }
 
-fn lookup_mad_lib_text_for_tag(tag_name: &str) -> &str {
+fn lookup_mad_lib_text_for_tag(tag: &str) -> &str {
+    let last_char = tag.chars().count() -1;
+    let tag_name = &tag[1..last_char];
     match tag_name {
-        "artist" => {"Pearl Jam"}
-        _ => {"replacement TODO"}
+        "artist" => "Pearl Jam",
+        _ => "Other"
     }
 }
 

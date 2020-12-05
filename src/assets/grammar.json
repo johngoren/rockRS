@@ -1,7 +1,7 @@
 {
 	"root": {
 		"value": [
-			"{band}<br/>{album}<p>{body}{ending}"
+			"{artist}<br/>{album}<p>{body}{ending}"
 		]
 	},
 	"body": {
