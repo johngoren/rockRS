@@ -62,11 +62,62 @@ fn lookup_mad_lib_text_for_tag(tag: &str) -> &str {
     let last_char = tag.chars().count() -1;
     let tag_name = &tag[1..last_char];
     match tag_name {
-        "artist" => "Pearl Jam",
+        "artist" => get_artist(),
         _ => "Other"
     }
 }
 
+fn get_artist() {
+
+}
+
+fn get_title() {
+
+}
+
+fn get_ending() {
+
+}
+
+fn get_body() {
+
+}
+
+fn get_sentence() {
+
+}
+
+fn get_adjective() {
+
+}
+
+fn get_noun() {
+
+}
+
+fn get_quality() {
+
+}
+
+fn get_description() {
+
+}
+
+fn get_song_name() {
+
+}
+
+fn get_classic_album() {
+
+}
+
+fn get_cliche() {
+
+}
+
+fn get_issue() {
+    
+}
 
 fn get_grammar() -> String {
     let path = format!("./src/assets/{}", GRAMMAR_FILENAME);
