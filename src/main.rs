@@ -2,6 +2,9 @@ use std::fs;
 use serde_json::{Value, from_str};
 use regex::{Regex};
 use std::collections::HashSet;
+use rand::Rng;
+use rand::distributions::{Distribution, Uniform};
+
 
 // #[macro_use(lazy_static)]
 // extern crate lazy_static;
@@ -61,63 +64,57 @@ fn get_mad_lib_text_for_tag(tag_name: &str) -> &str {
 fn lookup_mad_lib_text_for_tag(tag: &str) -> &str {
     let last_char = tag.chars().count() -1;
     let tag_name = &tag[1..last_char];
-    match tag_name {
-        "artist" => get_artist(),
-        _ => "Other"
+    return get_text_from_tag(tag_name);
+}
+
+fn get_text_from_tag(tag_name: &str) -> &str {
+    let grammar = get_grammar();
+    let json = get_json(grammar.as_str());
+    let parent = &json[tag_name];
+    let meta = &parent["meta"];
+    let lookup_type = meta["type"].as_str().unwrap();
+    let metric = &meta["metric"];
+    let special = &meta["special"];
+
+    return match lookup_type {
+        "WEIGHTED" => {
+            get_weighted_text(tag_name)
+        },
+        "PRESET" => get_preset_text(tag_name),
+        "UNIQUE" => get_random_text(tag_name),
+        _ => { return "" }
     }
 }
 
-fn get_artist() {
-
+fn get_score(tag_name: &str) -> Option<i8> {
+    return Some(0);
 }
 
-fn get_title() {
-
+fn get_random_text(tag: &str) -> &str {
+    let grammar = get_grammar();
+    let json = get_json(grammar.as_str());
+    let values = &json[tag]["value"];
+    let mut rng = rand::thread_rng();
+    let random_index = Uniform::from(0, values.count());
+    return values[random_index];
 }
 
-fn get_ending() {
-
+// TODO: Understand weighted distribution
+fn get_weighted_text(tag: &str)  -> &str {
+    let grammar = get_grammar();
+    let json = get_json(grammar.as_str());
+    let values = &json[tag]["value"].expect("Could not find values");
+    let mut rng = rand::thread_rng();
+    let random_index = Uniform::from(rng);
+    return values[random_index];
 }
 
-fn get_body() {
-
+fn get_preset_text(tag: &str) -> &str {
+    "TODO"
 }
 
-fn get_sentence() {
 
-}
 
-fn get_adjective() {
-
-}
-
-fn get_noun() {
-
-}
-
-fn get_quality() {
-
-}
-
-fn get_description() {
-
-}
-
-fn get_song_name() {
-
-}
-
-fn get_classic_album() {
-
-}
-
-fn get_cliche() {
-
-}
-
-fn get_issue() {
-    
-}
 
 fn get_grammar() -> String {
     let path = format!("./src/assets/{}", GRAMMAR_FILENAME);

@@ -15,7 +15,7 @@
 
 	"album": {
 		"meta": {
-			"type": "CHOOSE_JUST_ONCE",
+			"type": "UNIQUE",
 			"style": ["italic"]
 		},
 		"value": [
@@ -106,7 +106,7 @@
 	"sentence": {
 		"meta": {
 			"type": "WEIGHTED",
-			"yardstick": "quality",
+			"metric": "quality",
 			"special": ["capitalize"]
 		},
 		"value": [
@@ -181,7 +181,7 @@
 			"After a five year hiatus, {band} is back.",
 			"Accept no imitations.",
 			"Fans of {description} {noun} will find much to like on {album}, especially on {song}, a song about {issue}.",
-			"{rockcliche}, and no one knows this better than {band}.",
+			"{cliche}, and no one knows this better than {band}.",
 			"<P>They haven't sold out.",
 			"They take on {issue} ({song}) and {issue} ({song}).",
 			"{band} has always walked the line between originality and stereotype.",
@@ -232,7 +232,7 @@
 	"quality": {
 		"meta": {
 			"type": "WEIGHTED",
-			"yardstick": "quality"
+			"metric": "quality"
 		},
 		"value": [
 			"clunker",
@@ -244,7 +244,7 @@
 	"noun": {
 		"meta": {
 			"type": "WEIGHTED",
-			"yardstick": "loudness"
+			"metric": "loudness"
 		},
 		"value": [
 			"apocalypse",
@@ -297,7 +297,7 @@
 	"description": {
 		"meta": {
 			"type": "WEIGHTED",
-			"yardstick": "loudness"
+			"metric": "loudness"
 		},
 		"value": [
 			"deathly",
@@ -528,7 +528,7 @@
 	"adjective": {
 		"meta": {
 			"type": "WEIGHTED",
-			"yardstick": "quality"
+			"metric": "quality"
 		},
 		"value": [
 			"bottom-of-the-barrel",
@@ -629,7 +629,7 @@
 		]
 	},
 
-	"rockcliche": {
+	"cliche": {
 		"value": [
 			"It's better to burn out than it is to fade away",
 			"We'll all float on",
@@ -651,7 +651,7 @@
 	"ending": {
 		"meta": {
 			"type": "WEIGHTED",
-			"yardstick": "quality"
+			"metric": "quality"
 		},
 		"value": [
 			"You might as well spend 49 minutes listening to your dishwasher.",
@@ -662,18 +662,18 @@
 			"Maybe if the cover art were more appealing I'd give it another star.",
 			"Why do I even bother reviewing albums like this?",
 			"Strictly for masochists.",
-			"{rockcliche}.",
-			"{rockcliche}?",
-			"{rockcliche}.",
+			"{cliche}.",
+			"{cliche}?",
+			"{cliche}.",
 			"This album is the musical equivalent of a souvenir T-shirt: perfectly comfortable, but destined to fade.",
 			"It's the end of the world as they know it, and they feel fine.",
 			"Then again, we wouldn't have it any other way.",
-			"{rockcliche}.",
+			"{cliche}.",
 			"And if that doesn't make this album worth waiting for, I don't know what would.",
-			"{rockcliche}.",
-			"They know better than anyone else: {rockcliche}.",
-			"{rockcliche}.",
-			"{rockcliche}.",
+			"{cliche}.",
+			"They know better than anyone else: {cliche}.",
+			"{cliche}.",
+			"{cliche}.",
 			"{number} years and this is it?",
 			"In times like these, this is just the kind of album America needs.",
 			"I don't know about you, but I just can't get enough of Brian Eno.",
@@ -687,8 +687,8 @@
 			"Not to subscribe to Apple Music for this would make you an total ingrate.",
 			"Hands down, the album of the year.",
 			"It may well be the most important purchase you make, ever.",
-			"{rockcliche} indeed?",
-			"{rockcliche}."
+			"{cliche} indeed?",
+			"{cliche}."
 		]
 	},
 
